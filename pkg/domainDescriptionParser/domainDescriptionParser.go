@@ -5,16 +5,11 @@ import (
 	"log"
 )
 
-type ValueType struct {
-	Id   string `json:"id"`
-	Name string `json:"name"`
-}
-
 type Attribute struct {
-	Id        string    `json:"id"`
-	Name      string    `json:"name"`
-	Database  string    `json:"database"`
-	ValueType ValueType `json:"value-type"`
+	Id        string `json:"id"`
+	Name      string `json:"name"`
+	Database  string `json:"database"`
+	ValueType string `json:"value-type"`
 }
 
 type Class struct {
